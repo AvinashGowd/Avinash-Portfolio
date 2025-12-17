@@ -1,0 +1,418 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container hero-grid">
+        <div class="hero-text">
+            <span class="greeting">HELLO, IT'S ME</span>
+            <h1 class="name">Badugu Avinash</h1>
+            
+            <div class="role-wrapper">
+                <ul class="dynamic-txts">
+                    <li><span>Python Backend Developer</span></li>
+                    <li><span>Flask Developer</span></li>
+                    <li><span>Data Science Enthusiast</span></li>
+                    <li><span>Problem Solver</span></li>
+                </ul>
+            </div>
+
+            <p class="tagline">"Motivated Computer Science student focused on building efficient backend systems, REST APIs, and data-driven applications."</p>
+            
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <!-- Please place your resume.pdf in the static folder -->
+                <a href="{{ url_for('static', filename='resume.pdf') }}" download class="btn btn-outline">Download Resume <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="img-box">
+                <!-- Please place your profile.png in the static/images folder -->
+                <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Badugu Avinash">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Passionate Backend Developer</h3>
+                <p>I am a Computer Science student at Kalasalingam Academy of Research and Education with strong skills in Python, SQL, and Object-Oriented Programming. I specialize in building efficient and practical software solutions, familiar with Flask, API integration, and basic data analysis.</p>
+                <p>I am passionate about applying core computer science principles to real-world projects and committed to continuous learning. I have experience leading teams and publishing research in deep learning frameworks.</p>
+                
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Team Leadership</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section skills">
+    <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-wrapper">
+            
+            <!-- Frontend Skills -->
+            <div class="skills-category">
+                <h3>Frontend Development</h3>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>HTML5 / CSS3</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-line" data-percent="90%">
+                        <span style="width: 90%;"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-line" data-percent="85%">
+                        <span style="width: 85%;"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>React.js</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-line" data-percent="75%">
+                        <span style="width: 75%;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Skills -->
+            <div class="skills-category">
+                <h3>Backend Development</h3>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Python</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-line" data-percent="90%">
+                        <span style="width: 90%;"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Flask</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-line" data-percent="85%">
+                        <span style="width: 85%;"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Django</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-line" data-percent="80%">
+                        <span style="width: 80%;"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>RESTful APIs</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-line" data-percent="85%">
+                        <span style="width: 85%;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Database & Tools -->
+            <div class="skills-category">
+                <h3>Database & Tools</h3>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>MySQL / SQL</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-line" data-percent="85%">
+                        <span style="width: 85%;"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>MongoDB</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-line" data-percent="80%">
+                        <span style="width: 80%;"></span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Git & GitHub</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-line" data-percent="90%">
+                        <span style="width: 90%;"></span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Education & Achievements Section -->
+<section id="education" class="section education">
+    <div class="container">
+        <h2 class="section-title">Education & Achievements</h2>
+        
+        <div class="edu-achieve-grid">
+            <!-- Education Timeline -->
+            <div class="education-column">
+                <h3 class="column-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 – 2026</div>
+                        <div class="timeline-content">
+                            <h4>B.Tech in Computer Science</h4>
+                            <p class="institution">Kalasalingam Academy of Research and Education</p>
+                            <p class="grade">CGPA: 8.1 / 10.0</p>
+                            <p class="coursework">Coursework: Machine Learning, AI, DBMS, CN Fundamentals</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2020 – 2022</div>
+                        <div class="timeline-content">
+                            <h4>Class XII (Intermediate)</h4>
+                            <p class="institution">Sri Chaitanya Junior College</p>
+                            <p class="grade">Score: 688 / 1000</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2016 – 2020</div>
+                        <div class="timeline-content">
+                            <h4>Secondary School (ICSE)</h4>
+                            <p class="institution">Simhapuri Public School</p>
+                            <p class="grade">Score: 501 / 600</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements & Certifications -->
+            <div class="achievements-column">
+                <h3 class="column-title"><i class="fas fa-trophy"></i> Achievements</h3>
+                <div class="achievement-card">
+                    <div class="icon-box"><i class="fas fa-scroll"></i></div>
+                    <div class="achieve-info">
+                        <h4>Research Paper Published</h4>
+                        <p>Published "Herb AI: A Mobile Deep Learning Framework" in ICOICS (2025).</p>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="icon-box"><i class="fas fa-medal"></i></div>
+                    <div class="achieve-info">
+                        <h4>Hackathon Finalist</h4>
+                        <p>Ranked Top 10 out of 200+ participants (2024) for AI-driven solution.</p>
+                    </div>
+                </div>
+
+                <h3 class="column-title mt-4"><i class="fas fa-certificate"></i> Certifications</h3>
+                <div class="cert-links">
+                    <a href="https://www.geeksforgeeks.org/certificate/0f51de32083e5529f503b5a6c3601156" target="_blank" class="cert-item">
+                        <i class="fas fa-code"></i>
+                        <span>Python Certificate - GeeksforGeeks</span>
+                        <i class="fas fa-external-link-alt arrow"></i>
+                    </a>
+                    <a href="https://courses.cognitiveclass.ai/certificates/45ce242a97594b738364a4b3902fcf7b" target="_blank" class="cert-item">
+                        <i class="fas fa-database"></i>
+                        <span>SQL Certificate - IBM</span>
+                        <i class="fas fa-external-link-alt arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section projects">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-list">
+            
+            <!-- Project 1 -->
+            <div class="project-row">
+                <div class="project-image">
+                    <div class="placeholder-img job-portal-bg">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Job Portal App</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h3>Full Stack Job Portal Application</h3>
+                    <p class="project-desc">Developed a full stack web application using Flask REST APIs and MySQL for secure CRUD operations. Implemented user authentication and frontend-backend communication.</p>
+                    
+                    <div class="key-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Secure CRUD Operations</li>
+                            <li><i class="fas fa-check"></i> User Authentication</li>
+                            <li><i class="fas fa-check"></i> OOP Principles Implementation</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span>Flask</span>
+                        <span>MySQL</span>
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/AvinashGowd/Full-Stack-Job-Portal-Application-" target="_blank" class="btn-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-row reverse">
+                <div class="project-image">
+                    <div class="placeholder-img youtube-bg">
+                        <i class="fab fa-youtube"></i>
+                        <span>Sentiment Analyzer</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h3>YouTube Comment Sentiment Analysis</h3>
+                    <p class="project-desc">Built a Flask web app that fetches YouTube comments via Data API v3 and analyzes sentiment using VADER (NLTK). Visualizes results with Matplotlib/Plotly.</p>
+                    
+                    <div class="key-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> YouTube Data API Integration</li>
+                            <li><i class="fas fa-check"></i> VADER Sentiment Analysis</li>
+                            <li><i class="fas fa-check"></i> Data Visualization</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span>Flask</span>
+                        <span>Python</span>
+                        <span>NLTK</span>
+                        <span>REST API</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/AvinashGowd/You-tube-Comments-Sentiment-Analysis" target="_blank" class="btn-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-row">
+                <div class="project-image">
+                    <div class="placeholder-img heart-bg">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>Heart Disease Prediction</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h3>Heart Disease Risk Prediction</h3>
+                    <p class="project-desc">Developed a full stack web application implementing a machine learning classification model to predict heart disease risk with 91% accuracy.</p>
+                    
+                    <div class="key-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 91% Accuracy ML Model</li>
+                            <li><i class="fas fa-check"></i> Interactive Dashboard</li>
+                            <li><i class="fas fa-check"></i> Data Visualization (Seaborn)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span>Flask</span>
+                        <span>Scikit-Learn</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                    </div>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/AvinashGowd/heart-disease-prediction-ml" target="_blank" class="btn-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:avinashbadugu04@gmail.com">avinashbadugu04@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/avinash-badugu1/" target="_blank">Connect on LinkedIn</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/AvinashGowd" target="_blank">Follow on GitHub</a>
+                </div>
+            </div>
+            
+            <form class="contact-form" action="{{ url_for('contact') }}" method="POST">
+                <h3>Send Me a Message</h3>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
